@@ -12,14 +12,14 @@ btnReadMore.addEventListener('click', function() {
         pReadMore.classList.add('d-none');
     }
 });
-//roda o scroll
+
 var linksNav = document.querySelectorAll('.navbar-nav a');
 
 linksNav.forEach(function(link) {
     link.addEventListener('click', function(event) {
     event.preventDefault();
         
-        // pega texto dentro da tag <a> clicada
+       
         var textoLink = link.textContent;
         if (textoLink.trim() === 'Contato') {
             var footer = document.getElementById('footerContato');
