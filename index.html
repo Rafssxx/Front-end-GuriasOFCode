@@ -1,96 +1,104 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GuriasOFCode</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Gurias of Code</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./css/avatar2.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="./css/final.css">
+    <style>
+
+    </style>
 </head>
 
 <body>
-    <header id="headerHome">
-        <!--Navbar-->
-        <nav id="navbar" class="navbar navbar-expand-lg shadow-lg fixed-top bg-black">
-            <div class="container-fluid">
-                <a class="navbar-brand " href="#"><img src="" alt="">GuriasOFCode</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+    <main>
+        <header id="header-hone" class="header-nubank">
+            <div class="overlay"></div>
+            <nav class="navbar navbar-expand-lg navbar-dark container content">
+                <a class="navbar-brand" href="#">Gurias of Code</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="#">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="ensino.html">Ensino</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="#">Contato</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Apoiadores</a>
+                            <a class="btn btn-custom" href="#">Inscrever-se</a>
                         </li>
                     </ul>
                 </div>
-        </nav>
+            </nav>
 
-        <!--HERO Gurias OF code-->
-        <section class="text-white">
-            <div class="container py-5 mt-5">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-12 col-lg-6">
-                        <h3 class="display-3 fw-bold">
-                            <span class="roxo">{Gurias</span> of Code}
-                        </h3>
-                        <p class="lead">
-                            Projeto dedicado a encorajar e capacitar mulheres a
-                            mergulharem no mundo da tecnologia
-                        </p>
-                        <a href="" class="btn btn-roxo-hero mt-5 px-5 py-3 d-inline-block ">Acessar</a>
+            <section class="text-white hero-gurias">
+                <div class="avatarWrapper" id="avatarWrapper">
+                    <button class="btn-close" id="btnClose">&times;</button>
+                    <video width="320" height="240" id="video-avatar" class="rounded-4" controls>
+                        <source src="./assets/avatar/avatarVideoAudio.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div id="hidden-avatar"></div>
+            </section>
+        </header>
 
-
-
+        <article>
+            <div class="container py-5">
+                <div class="row g-3">
+                    <div class="col-12">
+                        <h3 class="text-center fw-bold titulo">Nossos Objetivos</h3>
                     </div>
-                    <div class="col-12 col-lg-6">
-                        <img src="./assets/img/undraw_Engineering_team_a7n2-removebg.png" alt="hero" class="img-fluid">
+                </div>
+                <div class="row mt-4 g-5">
+                    <div class="col-12 col-lg-4">
+                        <div class="card card-animado p-5 rounded-4 text-center shadow">
+                            <i class="bi bi-mortarboard" style="font-size: 3rem; color: #820AD1;"></i>
+                            <h4 class="card-text mt-3 fw-bold">Aprendizagem</h4>
+                            <p class="card-text">Promover um ambiente de aprendizado colaborativo, onde cada mulher
+                                possa desenvolver suas habilidades</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="card card-animado p-5 rounded-4 text-center shadow">
+                            <i class="bi bi-heart-pulse" style="font-size: 3rem; color: #820AD1;"></i>
+                            <h4 class="card-text mt-3 fw-bold">Incentivo</h4>
+                            <p class="card-text">Oferecer apoio e motivação contínuos para que cada participante possa
+                                alcançar suas metas e objetivos pessoais.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="card card-animado p-5 rounded-4 text-center shadow">
+                            <i class="bi bi-universal-access" style="font-size: 3rem; color: #820AD1;"></i>
+                            <h4 class="card-text mt-3 fw-bold">Inclusão</h4>
+                            <p class="card-text">Criar um espaço acolhedor e acessível, garantindo que todas se sintam
+                                bem-vindas e valorizadas.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="avatarWrapper" id="avatarWrapper">
-                <button class="btn-close" id="btnClose">&times;</button>
-                <video width="320" height="240" id="video-avatar" controls>
-                    <source src="./assets/avatar/avatarVideoAudio.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div id="hidden-avatar"></div>
-        </section>
-    </header>
+        </article>
 
-    <!--FIM HEADER-->
-    <!--MAIN -->
-    <main>
+
         <article>
             <div class="container mt-5 py-5" id="aboutMore">
                 <div class="row d-flex g-5">
-                    <div class="col-12 col-lg-5">
-                        <img src="./assets/img/img2.png" alt="" class=" img-fluid">
+                    <div class="col-12 col-lg-6">
+                        <img src="./assets/img/img2.png" alt="" class="img-comeco img-fluid">
                     </div>
-                    <div class="col-12 col-lg-7 pt-5" id="aboutMore">
-                        <h2 class="mb-3 fw-bold">Sobre o <span class="roxo">Gurias</span> of <span>code</span></h2>
+                    <div class="col-12 col-lg-6 py-5" id="aboutMore">
+                        <h2 class="mb-3 fw-bold titulo">Sobre o Gurias of Code</h2>
                         <p>O Gurias of Code é um projeto dedicado a capacitar mulheres a mergulharem no vasto e
                             emocionante mundo da
                             tecnologia. Nossa missão é fornecer um ambiente inclusivo e encorajador onde mulheres de
@@ -105,16 +113,7 @@
                         </p>
 
                         <p id="p-read-more" class="d-none">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. A autem dignissimos delectus, quis
-                            magnam
-                            corrupti, excepturi beatae nesciunt, assumenda distinctio animi doloremque voluptas iste
-                            aperiam
-                            necessitatibus qui eaque nisi. Magni!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla mollitia nam rerum, expedita
-                            ipsum ullam
-                            sit deserunt, eius architecto totam velit ea eveniet impedit minus harum deleniti laudantium
-                            autem
-                            temporibus.
+                            Estamos comprometidas em transformar o cenário tecnológico, proporcionando acesso a conhecimento e oportunidades que podem impulsionar o futuro de muitas mulheres. Acreditamos que a diversidade é fundamental para a inovação e, por isso, nossa iniciativa visa não apenas educar, mas também inspirar. Com uma abordagem prática e interativa, buscamos criar experiências que conectem as participantes com mentoras e especialistas da indústria.
                         </p>
 
                         <button class="btn btn-main px-5 py-2 mt-3 fw-bold" id="btn-read-more">Ler mais</button>
@@ -123,104 +122,135 @@
             </div>
         </article>
 
-        <article class="bg-black dados-projeto">
-            <div class="container mt-5 py-5" id="aboutMore">
-                <div class="row d-flex g-2">
-                    <div class="col-12 col-lg-8 pt-5" id="aboutMore">
-                        <h3 class="mb-3"><span><i class="bi bi-geo-alt p-1 roxo"></i></span>Local e horario</h3>
-                        <p>A Universidade Federal do Pampa (UNIPAMPA) convida todas as mulheres interessadas em
-                            tecnologia para
-                            participar do workshop especial voltado para apoiar e incentivar meninas na computação. Este
-                            evento tem
-                            como objetivo promover a inclusão e o empoderamento feminino na área de tecnologia,
-                            oferecendo um espaço
-                            de aprendizado, troca de experiências e construção de uma comunidade forte e colaborativa.
-                        </p>
-                        <h4 class="text-center mt-5 py-4">Contagem Regressiva</h4>
-                        <div class="text-center fw-bold" id="countdown"></div>
+        <article class="faq-section py-5">
+            <div class="container">
+                <h2 class="text-center text-white"><span><i class="bi bi-question-square-fill m-2"
+                            style="font-size: 2rem;"></i></span>Duvidas Sobre O Evento</h2>
+                <div class="row justify-content-center mt-4 py-4">
+                    <div class="col-md-4">
+                        <div class="card card-animado">
+                            <div class="card-body text-center">
+                                <div class="icon-circle mx-auto mb-3">
+                                    <i class="bi bi-question-circle icon-large" style="font-size: 3rem;"></i>
+                                </div>
+                                <h5 class="mb-0">O evento é realmente gratuito?</h5>
+                                <p>Sim! Todos os participantes não precisam pagar nada. O evento é completamente
+                                    gratuito, incluindo lanches e bebidas.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-12 col-lg-4">
-                        <div class="">
-                            <iframe class="map rounded-2"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1731.2852558589902!2d-55.76909599389176!3d-29.790058077979662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95aab98a8f097415%3A0xba478dd53e4e9407!2sUniversidade%20Federal%20do%20Pampa%20-%20Campus%20Alegrete!5e0!3m2!1spt-BR!2sbr!4v1725543600567!5m2!1spt-BR!2sbr"
-                                width="500" height="480" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="col-md-4">
+                        <div class="card card-animado">
+                            <div class="card-body text-center">
+                                <div class="icon-circle mx-auto mb-3">
+                                    <i class="bi bi-person-circle icon-large" style="font-size: 3rem;"></i>
+                                </div>
+                                <h5 class="mb-0">Quem pode participar?</h5>
+                                <p>O evento é voltado para gurias e mulheres a partir de 16 anos que tenham interesse e
+                                    curiosidade em computação.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-animado">
+                            <div class="card-body text-center">
+                                <div class="icon-circle mx-auto mb-3">
+                                    <i class="bi bi-pencil-square icon-large" style="font-size: 3rem;"></i>
+                                </div>
+                                <h5 class="mb-0">Como faço para me inscrever?</h5>
+                                <p>Para se inscrever, preencha o formulário disponibilizado nas nossas redes,
+                                    fique atenta pois temos uma quantidade de vagas limitadas!</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </article>
-
-        <div class="container py-5">
-            <div class="row g-3">
-                <div class="col-12">
-                    <h3 class="text-center fw-bold">Nossos <span class="roxo">Objetivos</span></h3>
-                </div>
-            </div>
-            <div class="row mt-4 g-5">
-                <div class="col-12 col-lg-4">
-                    <div class="card p-5 bg-black text-white rounded-4">
-                        <i class="bi bi-mortarboard" style="font-size: 2rem;"></i>
-                        <h4 class="card-text ">Aprendizagem</h4>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="card p-5 card-fundo text-white rounded-4">
-                        <i class="bi bi-heart-pulse" style="font-size: 2rem;"></i>
-                        <h4 class="card-text">Incentivo</h4>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="card p-5 bg-black text-white rounded-4">
-                        <i class="bi bi-universal-access" style="font-size: 2rem;"></i>
-                        <h4 class="card-text">Inclusão</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        
         <section class="py-5 mt-5 section-apoiadores" id="Apoiadores">
             <div class="container-fluid text-center">
-                <h2 class="mb-5   fw-bold">Principais <span class="roxo">Apoiadores</span></h2>
-                <div class="row justify-content-center g-2 mt-4">
+                <h2 class="mb-5 fw-bold titulo">Principais Apoiadores</h2>
+                <div class="row justify-content-center g-4 mt-4">
                     <div class="col-6 col-md-4 col-lg-2">
-                        <div class="card-logo border-0 ">
-                            <img src="./assets/logos/pampatec-removebg-preview.png" alt="Pampatec" class="img-fluid logo ">
+                        <div class=" border-0">
+                            <img src="./assets/logos/pampatec-removebg-preview.png" alt="Pampatec" class="img-fluid logo">
                         </div>
                     </div>
                     <div class="col-6 col-md-4 col-lg-2">
-                        <div class="card-logo border-0 ">
-                            <img src="./assets/logos/devPampa.png" alt="DevPampa" class="img-fluid logo">
+                        <div class=" border-0">
+                            <img src="./assets/logos/logodaasdada-removebg-preview.png" alt="Logo" class="img-fluid logo">
                         </div>
                     </div>
                     <div class="col-6 col-md-4 col-lg-2">
-                        <div class="card-logo border-0 ">
-                            <img src="./assets/logos/vendaERP.png" alt="DevPampa" class="img-fluid logo">
+                        <div class=" border-0">
+                            <img src="./assets/logos/sebrae-removebg-preview.png" alt="Sebrae" class="img-fluid logo">
                         </div>
                     </div>
                     <div class="col-6 col-md-4 col-lg-2">
-                        <div class="card-logo border-0 ">
-                            <img src="./assets/logos/sebrae-removebg-preview.png" alt="Sebrae" class="img-fluid logo ">
+                        <div class=" border-0">
+                            <img src="./assets/logos/fapergs.png" alt="Fapergs" class="img-fluid logo">
                         </div>
                     </div>
                     <div class="col-6 col-md-4 col-lg-2">
-                        <div class="card-logo border-0 ">
-                            <img src="./assets/logos/agendei.jpeg" alt="DevPampa" class="img-fluid logo">
+                        <div class="border-0">
+                            <img src="./assets/logos/inovaRs.png" alt="InovaRS" class="img-fluid logo">
                         </div>
                     </div>
                     <div class="col-6 col-md-4 col-lg-2">
-                        <div class="card-logo border-0">
-                            <img src="./assets/logos/fapergs.png" alt="Fapergs" class="img-fluid logo ">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <div class="card-logo border-0 ">
-                            <img src="./assets/logos/inovaRs.png" alt="InovaRS" class="img-fluid logo ">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <div class="card-logo border-0">
+                        <div class=" border-0">
                             <img src="./assets/logos/gRs.png" alt="GRS" class="img-fluid logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="py-5 mt-5 section-pratocinadores" id="Pratocinadores">
+            <div class="container-fluid text-center">
+                <h2 class="mb-5 fw-bold titulo">Principais Pratocinadores</h2>
+                <div class="row justify-content-center g-4 mt-4">
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class=" border-0">
+                            <img src="./assets/logos/vendaERP.png" alt="Pampatec" class="img-fluid logo">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class=" border-0">
+                            <img src="./assets/logos/devPampa.png" alt="Sebrae" class="img-fluid logo">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="border-0">
+                            <img src="./assets/logos/sicredi-removebg-preview.png" alt="GRS" class="img-fluid logo">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="border-0">
+                            <img src="./assets/logos/endime.png" alt="Fapergs" class="img-fluid logo">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="border-0">
+                            <img src="./assets/logos/pampa.png" alt="GRS" class="img-fluid logo">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class=" border-0">
+                            <img src="./assets/logos/fnp.png" alt="InovaRS" class="img-fluid logo">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class=" border-0">
+                            <img src="./assets/logos/agendei.jpeg" alt="Logo" class="img-fluid logo">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class=" border-0">
+                            <img src="./assets/logos/caal.png" alt="InovaRS" class="img-fluid logo">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="border-0">
+                            <img src="./assets/logos/image-removebg-preview.png" alt="GRS" class="img-fluid logo">
                         </div>
                     </div>
                 </div>
@@ -229,20 +259,20 @@
 
         <section class="team-section mt-5 py-5 pt-5">
             <div class="container">
-                <h3 class="fw-bold text-center mb-5">Organizadores</h3>
+                <h3 class="fw-bold text-center text-white mb-5">Organizadores</h3>
                 <div class="row justify-content-center align-items-center g-4">
                     <div class="col-md-4">
-                        <div class="card text-center align-items-center" style="width: 100%;">
+                        <div class="card card-animado text-center align-items-center" style="width: 100%;">
                             <i class="bi bi-person" style="font-size: 48px;"></i>
-                            <div class="card-body">
+                            <div class="card-body ">
                                 <h5 class="card-title">Profª. Ildevana Poltronieri</h5>
                                 <p class="roxo">Coordenadora</p>
                             </div>
                         </div>
                     </div>
-        
+
                     <div class="col-md-4">
-                        <div class="card text-center align-items-center" style="width: 100%;">
+                        <div class="card card-animado text-center align-items-center" style="width: 100%;">
                             <i class="bi bi-person" style="font-size: 48px;"></i>
                             <div class="card-body">
                                 <h5 class="card-title">Maria Cristina Ramos Aurélio</h5>
@@ -250,9 +280,9 @@
                             </div>
                         </div>
                     </div>
-        
+
                     <div class="col-md-4">
-                        <div class="card text-center align-items-center" style="width: 100%;">
+                        <div class="card card-animado text-center align-items-center" style="width: 100%;">
                             <i class="bi bi-person" style="font-size: 48px;"></i>
                             <div class="card-body">
                                 <h5 class="card-title">Ediane Bianchin</h5>
@@ -261,16 +291,16 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card text-center align-items-center" style="width: 100%;">
+                        <div class="card card-animado text-center align-items-center" style="width: 100%;">
                             <i class="bi bi-person" style="font-size: 48px;"></i>
                             <div class="card-body">
-                                <h5 class="card-title">Rafael silva</h5>
+                                <h5 class="card-title">Rafael Silva</h5>
                                 <p class="roxo">Ambiente de programação</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card text-center align-items-center" style="width: 100%;">
+                        <div class="card card-animado text-center align-items-center" style="width: 100%;">
                             <i class="bi bi-person" style="font-size: 48px;"></i>
                             <div class="card-body">
                                 <h5 class="card-title">Vinicius Silva</h5>
@@ -279,7 +309,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card text-center align-items-center" style="width: 100%;">
+                        <div class="card card-animado text-center align-items-center" style="width: 100%;">
                             <i class="bi bi-person" style="font-size: 48px;"></i>
                             <div class="card-body">
                                 <h5 class="card-title">Raissa Pedroso Moura</h5>
@@ -288,7 +318,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card text-center align-items-center" style="width: 100%;">
+                        <div class="card card-animado text-center align-items-center" style="width: 100%;">
                             <i class="bi bi-person" style="font-size: 48px;"></i>
                             <div class="card-body">
                                 <h5 class="card-title">Davi Tito</h5>
@@ -297,7 +327,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card text-center align-items-center" style="width: 100%;">
+                        <div class="card card-animado text-center align-items-center" style="width: 100%;">
                             <i class="bi bi-person" style="font-size: 48px;"></i>
                             <div class="card-body">
                                 <h5 class="card-title">Emilly Nascimento Dias</h5>
@@ -307,50 +337,24 @@
                     </div>
                 </div>
             </div>
-        </section>
-        
-
-
-
-        <!--Projetos!-->
-        <h3 class="text-center py-5  mt-5">Fotos do<span class="roxo"> Evento</span></h3>
-        <div class="container mt-5 py-5">
-            <div class="row g-3">
-                <div class="col-6">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/400x200" alt="">
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/400x200" class="img-fluid card-img-top" alt="">
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/400x200" class="img-fluid card-img-top" alt="">
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/400x200" class="img-fluid card-img-top" alt="">
+        </section>  
+    </main>
+    <footer class="pt-5 py-5 mt-5 bg-black text-white" id="footerContato">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                    <p class="mb-2 mb-sm-0">&copy; 2024 Gurias of Code.</p>
+                    <p class="mb-2 mb-sm-0">Unipampa Alegrete</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/guriasofcode" target="_blank" class="text-white">
+                            <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
-    <!--FIM MAIN-->
-    <!--Footer-->
-    <footer class="pt-5 py-5 mt-5 bg-black" id="footerContato">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-                    <p>&copy; 2024 Gurias of Code.</p>
-                    <p>Unipampa alegrete</p>
-                </div>
-            </div>
     </footer>
-    </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
