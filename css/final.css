@@ -4,15 +4,23 @@ body {
     padding: 0;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
+    overflow-x: hidden;
 }
-.header-nubank {
+.header-gurias {
     background-image: url('../assets/img/guraHero.jpg'); /* Substitua pela URL da imagem desejada */
-    background-size: cover;
-    height: 100vh;
-    background-position: center;
+    background-size: cover; /* Cobre todo o espaço do elemento */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    height: 100vh; /* Altura total da janela de visualização */
     color: white;
     padding: 15px 0;
     position: relative;
+}
+
+@media (max-width: 768px) {
+    .header-gurias {
+        height: 70vh; /* Reduz a altura em telas menores */
+    }
 }
 .navbar-brand {
     font-size: 1.5rem;
