@@ -1,4 +1,4 @@
-body {
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@ body {
     background-size: cover; /* Cobre todo o espaço do elemento */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita repetição da imagem */
-    min-height: 100vh; /* Altura total da janela de visualização */
+    min-height:100vh; /* Altura total da janela de visualização */
     color: white;
     padding: 15px 0;
     position: relative;
@@ -21,7 +21,7 @@ body {
     .header-gurias {
         padding: 15px 0;
         background-size: cover;
-        height: 60vh; /* Reduz a altura em telas menores */
+        height: 10vh; /* Reduz a altura em telas menores */
     }
 }
 .navbar-brand {
