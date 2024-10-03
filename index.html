@@ -13,7 +13,8 @@
 </head>
 
 <body>
-        <header id="" class="header-gurias">
+    <main>
+        <header id="header-hone" class="header-gurias">
             <div class="overlay"></div>
             <nav class="navbar navbar-expand-lg navbar-dark container content">
                 <a class="navbar-brand" href="#">Gurias of Code</a>
@@ -25,6 +26,9 @@
                     <ul class="navbar-nav ms-auto justify-content-center text-center align-items-center">
                         <li class="nav-item">
                             <a class="nav-link" href="#">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Sobre</a>
@@ -39,9 +43,17 @@
                 </div>
             </nav>
 
-            </header>
+            <section class="text-white hero-gurias">
+                <div class="avatarWrapper" id="avatarWrapper">
+                    <button class="btn-close" id="btnClose">&times;</button>
+                    <video width="320" height="240" id="video-avatar" class="rounded-4" controls>
+                        <source src="./assets/avatar/avatarVideoAudio.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div id="hidden-avatar"></div>
+            </section>
+        </header>
 
-        <main>
         <article>
             <div class="container py-5">
                 <div class="row g-3">
@@ -342,7 +354,7 @@
             </div>
         </div>
     </footer>
-    </main>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
