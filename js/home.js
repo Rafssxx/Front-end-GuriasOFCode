@@ -14,36 +14,39 @@ btnReadMore.addEventListener('click', function() {
 
 // Rolar suavemente para as seções ao clicar nos links do navbar
 var linksNav = document.querySelectorAll('.navbar-nav a');
+
+// Função de rolagem suave
 linksNav.forEach(function(link) {
     link.addEventListener('click', function(event) {
-        event.preventDefault();
-        
-        var textoLink = link.textContent.trim();
-        var targetElement;
+        // Verifique se o botão NÃO é "Inscrever-se" (id="btn-inscrever")
+        if (link.id !== 'btn-inscrever') {
+            event.preventDefault(); // Prevenir o comportamento padrão para os links normais
 
-        switch (textoLink) {
-            case 'Contato':
-                targetElement = document.getElementById('footerContato');
-                break;
-            case 'Sobre':
-                targetElement = document.getElementById('aboutMore');
-                break;
-            case 'Início':
-                targetElement = document.getElementById('headerHome');
-                break;
-            case 'Apoiadores':
-                targetElement = document.getElementById('Apoiadores');
-                break;
-            default:
-                return; // Não faz nada se o link não corresponder
-        }
+            var textoLink = link.textContent.trim();
+            var targetElement;
 
-        if (targetElement) {
-            var targetPosition = targetElement.offsetTop;
-            window.scrollTo({
-                top: targetPosition,
-                behavior: 'smooth'
-            });
+            switch (textoLink) {
+                case 'Contato':
+                    targetElement = document.getElementById('footerContato');
+                    break;
+                case 'Sobre':
+                    targetElement = document.getElementById('aboutMore');
+                    break;
+                case 'Início':
+                    targetElement = document.getElementById('headerHome');
+                    break;
+                default:
+                    return; // Não faz nada se o link não corresponder a um alvo
+            }
+
+            // Verificar se o alvo existe e rolar até ele
+            if (targetElement) {
+                var targetPosition = targetElement.offsetTop;
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
         }
     });
 });

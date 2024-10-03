@@ -17,7 +17,38 @@ body{
     position: relative;
 }
 
+#aboutMore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#btn-read-more {
+    display: block;
+    margin: 0 auto;
+    background-color: #820AD1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn-read-more:hover {
+    background-color: #F4B400;
+}
+
 @media (max-width: 768px) {
+    .btn-main {
+        text-align: center;
+    }
+    footer{
+        text-align: center;
+    }
+    footer i {
+        text-align: center;
+    }
     .header-gurias {
         padding: 15px 0;
         background-size: cover;
