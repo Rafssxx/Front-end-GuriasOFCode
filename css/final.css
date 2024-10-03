@@ -23,6 +23,26 @@
         background-size: cover;
         height: 5vh;
     }
+    .navbar-nav .nav-link {
+        font-size: 0.9rem; /* Diminuir o tamanho da fonte dos links de navegação */
+        margin-right: 10px; /* Reduzir a margem direita */
+    }
+    /* Estilo para o botão */
+    .navbar-nav .nav-item .btn-custom {
+        background-color:white; /* Cor de fundo do botão */
+        color: #820AD1;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        margin-right: 15px; /* Espaçamento horizontal para o botão */
+        margin-top: 5px; /* Espaçamento superior */
+        margin-bottom: 5px; /* Espaçamento inferior */
+    }
+    /* Estilo do botão ao passar o mouse */
+    .navbar-nav .nav-item .btn-custom:hover {
+        background-color: #F4B400;
+        color: white;
+    }
 }
 .navbar-brand {
     font-size: 1.5rem;
