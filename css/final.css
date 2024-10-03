@@ -7,7 +7,6 @@ body{
     overflow-x: hidden;
 }
 .header-gurias {
-    background-image: url('../assets/img/guraHero.jpg'); /* Substitua pela URL da imagem desejada */
     background-size: cover; /* Cobre todo o espaço do elemento */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita repetição da imagem */
