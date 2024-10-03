@@ -29,13 +29,13 @@ body{
 @media (max-width: 575) {
     .header-gurias {
         padding: 5px 0; /* Ajusta o padding ainda mais para telas muito pequenas */
-        min-height: 50vh; /* Reduz a altura mínima para telas muito pequenas */
+        min-height: 30vh; /* Reduz a altura mínima para telas muito pequenas */
     }
 }
 @media (max-width: 768px) {
     .header-gurias {
         padding: 10px 0; /* Ajusta o padding para telas menores */
-        min-height: 70vh; /* Reduz a altura mínima em telas pequenas */
+        min-height: 40vh; /* Reduz a altura mínima em telas pequenas */
     }
     .btn-main {
         text-align: center;
