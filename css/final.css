@@ -1,12 +1,13 @@
 body{
+    font-family: "Roboto", sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    overflow-x: hidden;
 }
 .header-gurias {
+    background-image: url('../assets/img/guraHero.jpg'); /* Substitua pela URL da imagem desejada */
     background-size: cover; /* Cobre todo o espaço do elemento */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita repetição da imagem */
@@ -22,23 +23,20 @@ body{
     align-items: center;
 }
 
-#btn-read-more {
-    display: block;
-    margin: 0 auto;
-    background-color: #820AD1;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
 #btn-read-more:hover {
     background-color: #F4B400;
 }
-
+@media (max-width: 575) {
+    .header-gurias {
+        padding: 5px 0; /* Ajusta o padding ainda mais para telas muito pequenas */
+        min-height: 50vh; /* Reduz a altura mínima para telas muito pequenas */
+    }
+}
 @media (max-width: 768px) {
+    .header-gurias {
+        padding: 10px 0; /* Ajusta o padding para telas menores */
+        min-height: 70vh; /* Reduz a altura mínima em telas pequenas */
+    }
     .btn-main {
         text-align: center;
     }
@@ -47,11 +45,6 @@ body{
     }
     footer i {
         text-align: center;
-    }
-    .header-gurias {
-        padding: 15px 0;
-        background-size: cover;
-        height: 5vh;
     }
     .navbar-nav .nav-link {
         font-size: 0.9rem; /* Diminuir o tamanho da fonte dos links de navegação */
