@@ -21,7 +21,7 @@
     .header-gurias {
         padding: 15px 0;
         background-size: cover;
-        height: 10vh; /* Reduz a altura em telas menores */
+        height: 5vh;
     }
 }
 .navbar-brand {
