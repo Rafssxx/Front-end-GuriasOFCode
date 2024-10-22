@@ -1,0 +1,541 @@
+:root {
+    --cor-fundo: #27202c;
+    --cor-texto-claro: white;
+    --cor-laranja: #F49F51;
+    --cor-laranja-claro: #F4B400;
+    --cor-roxa: #820AD1;
+    --cor-roxa-escura: #440399;
+    --cor-preta: black;
+    --cor-branca: white;
+    --cor-texto: #3b2947;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+body{
+    background-image: url('../assets/img/Fundo\ Inicial.svg');
+    background-color: var(--cor-fundo);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: var(--cor-laranja);
+}
+.navbar-toggler {
+    border: none; /* Remove a borda do botão */
+}
+
+.navbar-toggler-icon {
+    background-color: white; /* Cor de fundo do ícone */
+    border: 1px solid white; /* Adiciona uma borda branca */
+    width: 30px; /* Largura do ícone */
+    height: 3px; /* Altura da barra do ícone */
+    position: relative; /* Para posicionar as barras */
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+    content: ""; /* Adiciona barras adicionais */
+    background-color: white; /* Cor das barras */
+    position: absolute; /* Posicionamento absoluto */
+    left: 0; /* Alinhamento à esquerda */
+    width: 100%; /* Largura total */
+    height: 3px; /* Altura das barras */
+}
+
+.navbar-toggler-icon::before {
+    top: -8px; /* Posição da barra de cima */
+}
+
+.navbar-toggler-icon::after {
+    bottom: -8px; /* Posição da barra de baixo */
+}
+.custom-navbar {
+    padding: 10px 0; /* Ajuste do espaçamento superior e inferior */
+  }
+  
+  .navbar-brand img {
+    max-height: 44px;
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-brand img:hover {
+    transform: scale(1.1); /* Efeito de zoom no logo ao passar o mouse */
+  }
+
+  
+  .nav-link {
+      margin: 0 10px; /* Margem entre os links */
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    .nav-link:hover {
+      color: #F49F51!important; /* Cor do texto */
+    }
+  .btn-custom {
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 8px 20px;
+    background-color: #E2B6FF;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-custom:hover {
+    background-color: #F49F51;
+  }
+
+  .img-hero{
+    background-image: url('../assets/img/uvaverde.svg');
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Cobre todo o espaço do elemento */
+    
+}
+  @media (max-width: 575) {
+    .img-hero {
+        min-height: 30vh; /* Reduz a altura mínima para telas muito pequenas */
+    }
+    h2{
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .img-hero {
+        padding: 10px 0; /* Ajusta o padding para telas menores */
+        min-height: 40vh; /* Reduz a altura mínima em telas pequenas */
+    }
+    h2{
+        text-align: center;
+    }
+}
+  @media (min-width: 992px) {
+    .navbar {
+      margin-top: 20px; /* Ajuste para manter a navbar no centro */
+    }
+  }
+  
+  @media (max-width: 991.98px) {
+    .navbar-nav {
+      text-align: center;
+    }
+  
+    .btn-custom {
+      margin-top: 10px;
+    }
+  }
+.patrocinadores-apoiadores {
+    background-color: #1a1a2e;
+    color: #fff;
+}
+
+.border-dashed {
+    border: 8px dashed #e91e63;
+}
+
+.patrocinadores-apoiadores img {
+    max-height: 80px; /* Limite de altura para todos os logos */
+    object-fit: contain;
+}
+
+.badge {
+    border-radius: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+.icons{
+    color:  var(--cor-texto);
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-texto-claro);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--cor-roxa-escura);
+}
+.about-text{
+    color: var(--cor-branca);
+}
+
+
+/* Botões */
+.btn-custom, .btn-main {
+    background-color:#E2B6FF;
+    color: var(--cor-fundo);
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-custom:hover, .btn-main:hover {
+    background-color: var(--cor-laranja);
+}
+
+#btn-read-more:hover {
+    background-color: var(--cor-roxa);
+}
+
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: var(--cor-texto-claro);
+    margin-right: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--cor-roxa-escura);
+}
+
+/* Imagem e Card */
+.img-comeco, .card-animado {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-comeco:hover {
+    transform: translateX(-10px) scale(0.9);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-animado:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* FAQ */
+.faq-section .card {
+    margin-bottom: 20px;
+}
+
+.faq-section .card-body {
+    background-color: var(--cor-texto-claro);
+}
+
+/* Ícones */
+.icon-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-texto-claro);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.icon-large {
+    font-size: 24px;
+    color: var(--cor-roxa);
+}
+.team-section {
+    background-color: #f8f9fa;
+    border-radius: 15px;
+  }
+
+  .team-member img {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .team-member img:hover {
+    transform: scale(1.1);
+  }
+
+  .team-name {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .team-role {
+    font-style: italic;
+    color: #6c757d;
+  }
+
+  .team-description {
+    margin-top: 8px;
+    font-size: 1rem;
+    color: #495057;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #F49F51;
+    color: #F49F51;
+    border-radius: 50%;
+    padding: 30px;
+  }
+  .carousel-control-next,
+  .carousel-control-prev{
+    color: #F49F51;
+  }
+
+  @media (max-width: 576px) {
+    .team-member img {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  .team-description {
+    margin-top: 10px;
+  }
+
+  .support-logo {
+    max-width: 428px; margin: 10px;    
+}
+
+.support-logo:hover {
+    transform: scale(1.1); /* Efeito de zoom no hover */
+}
+
+.footer .social-icons a:hover {
+    color: #ff9800; /* Hover em laranja para redes sociais */
+    transition: color 0.3s ease;
+}
+
+.footer hr {
+    margin: 2rem 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.content {
+    position: relative;
+    z-index: 2;
+}
+
+
+
+/* Animações */
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInAvatar {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    
+    .btn-main, .btn-custom {
+        display: block;
+        margin: 10px auto; /* Centraliza os botões */
+        text-align: center;
+    }
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+        margin: 5px auto;
+        text-align: center; /* Centraliza links da navbar */
+    }
+
+    .logo-nav {
+        display: none;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .team-section, .patrocinadores-apoiadores {
+        text-align: center;
+    }
+}
+.avatarWrapper {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeInSlideUp 1.2s ease-out;
+}
+
+.avatar {
+    width: 280px;
+    height: auto;
+    opacity: 0;
+    animation: fadeInAvatar 1.2s ease-out forwards;
+}
+
+.btn-close {
+    background: none;
+    border: none;
+    color: #440399;
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    z-index: 1002;
+}
+
+
+.btn-close:hover {
+    color: #ff4c4c;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInAvatar {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.avatarWrapper {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeInSlideUp 1.2s ease-out;
+}
+
+.avatar {
+    width: 280px;
+    height: auto;
+    opacity: 0;
+    animation: fadeInAvatar 1.2s ease-out forwards;
+}
+
+.btn-close {
+    background: none;
+    border: none;
+    color: #440399;
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    z-index: 1002;
+}
+
+
+.btn-close:hover {
+    color: #ff4c4c;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInAvatar {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

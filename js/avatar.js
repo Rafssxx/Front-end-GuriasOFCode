@@ -2,11 +2,14 @@ document.addEventListener('DOMContentLoaded', function () {
   const scrollPosition = window.scrollY;
   console.log(scrollPosition);
   const btnClose = document.getElementById('btnClose');
-  const avatarWrapper = document.getElementById('avatarWrapper');
-  const aboutSection = document.getElementById('hidden-avatar');
+
+  if(btnClose)
+  {
+    console.log('ola');
+  }
   const myVideo = document.getElementById('video-avatar')
   
-  if (btnClose && avatarWrapper && aboutSection) {
+  if (btnClose) {
     btnClose.addEventListener('click', function () {
       avatarWrapper.classList.add('hidden');
       myVideo.pause();

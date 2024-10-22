@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: #efb7ff;
+}
+.navbar-nav .nav-link {
+    color: white;
+    margin-right: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.list-guides{
+    cursor: pointer;
+}
+.menu-guia li {
+    border: 1px solid #6f42c1;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s;
+}
+.menu-guia li:hover {
+    background-color: #e9ecef;
+}
+.menu-guia a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
+.menu-guia a:hover {
+    color: inherit;
+}
+.index-menu a {
+    text-decoration: none;
+    color: #240054;
+}
+.index-menu li {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+.roxo{
+    color: #240054;
+}

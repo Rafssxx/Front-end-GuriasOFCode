@@ -1,3 +1,13 @@
+const fecharAvatar = document.getElementById('btnClose')
+const avatarWrapper = document.getElementById('avatarWrapper')
+fecharAvatar.addEventListener('click', function(){
+
+})
+
+
+
+
+
 // Função para alternar a exibição do texto "Ler mais"
 var btnReadMore = document.getElementById('btn-read-more');
 btnReadMore.addEventListener('click', function() {
@@ -18,35 +28,38 @@ var linksNav = document.querySelectorAll('.navbar-nav a');
 // Função de rolagem suave
 linksNav.forEach(function(link) {
     link.addEventListener('click', function(event) {
-        // Verifique se o botão NÃO é "Inscrever-se" (id="btn-inscrever")
-        if (link.id !== 'btn-inscrever') {
-            event.preventDefault(); // Prevenir o comportamento padrão para os links normais
+        // Impedir preventDefault APENAS para "btn-inscrever" e "tutorial"
+        if (link.id === 'btn-inscrever' || link.id === 'tutorial') {
+            return; // Deixa o comportamento padrão
+        }
 
-            var textoLink = link.textContent.trim();
-            var targetElement;
+        event.preventDefault(); // Prevenir o comportamento padrão para outros links
 
-            switch (textoLink) {
-                case 'Contato':
-                    targetElement = document.getElementById('footerContato');
-                    break;
-                case 'Sobre':
-                    targetElement = document.getElementById('aboutMore');
-                    break;
-                case 'Início':
-                    targetElement = document.getElementById('headerHome');
-                    break;
-                default:
-                    return; // Não faz nada se o link não corresponder a um alvo
-            }
+        var textoLink = link.textContent.trim();
+        var targetElement;
 
-            // Verificar se o alvo existe e rolar até ele
-            if (targetElement) {
-                var targetPosition = targetElement.offsetTop;
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
-                });
-            }
+        // Mapeamento dos links para os elementos-alvo
+        switch (textoLink) {
+            case 'Contato':
+                targetElement = document.getElementById('footerContato');
+                break;
+            case 'Sobre':
+                targetElement = document.getElementById('aboutMore');
+                break;
+            case 'Início':
+                targetElement = document.getElementById('headerHome');
+                break;
+            default:
+                return; // Não faz nada se o link não corresponder a um alvo
+        }
+
+        // Verificar se o alvo existe e rolar até ele
+        if (targetElement) {
+            var targetPosition = targetElement.offsetTop;
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
         }
     });
 });
