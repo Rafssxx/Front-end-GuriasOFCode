@@ -1,52 +1,77 @@
+:root {
+    --cor-fundo: #27202c;
+    --cor-texto-claro: white;
+    --cor-laranja: #F49F51;
+    --cor-laranja-claro: #F4B400;
+    --cor-roxa: #820AD1;
+    --cor-roxa-escura: #440399;
+    --cor-preta: black;
+    --cor-branca: white;
+    --cor-texto: #3b2947;
+    --cor-roxo-claro: #E2B6FF;
+}
+
 *{
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
 }
+
 .navbar{
-    background-color: #efb7ff;
+    background-color: var(--cor-fundo);
 }
-.navbar-nav .nav-link {
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--cor-laranja);
+}
+h3{
+    margin-top: 20px;
+}
+.alert-1{
+    background-color: var(--cor-roxo-claro);
+    color: #27202c;
+}
+.alert-2{
+    background-color: #F49F51;
+    
+}
+
+.custom-navbar {
+    padding: 10px 0; /* Ajuste do espaçamento superior e inferior */
+  }
+  
+  .navbar-brand img {
+    max-height: 44px;
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-brand img:hover {
+    transform: scale(1.1); /* Efeito de zoom no logo ao passar o mouse */
+  }
+ 
+  .nav-link {
+      margin: 0 10px; /* Margem entre os links */
+      font-weight: 500;
+      transition: color 0.3s;
+      color: var(--cor-branca);
+    }
+    .nav-link:hover {
+      color: #F49F51!important; /* Cor do texto */
+    }
+  .btn-custom {
     color: white;
-    margin-right: 20px;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-.list-guides{
-    cursor: pointer;
-}
-.menu-guia li {
-    border: 1px solid #6f42c1;
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    background-color: #f8f9fa;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 8px 20px;
+    background-color: #E2B6FF;
     transition: background-color 0.3s;
-}
-.menu-guia li:hover {
-    background-color: #e9ecef;
-}
-.menu-guia a {
-    text-decoration: none;
-    color: inherit;
-    display: flex;
-    align-items: center;
-}
-.menu-guia a:hover {
-    color: inherit;
-}
-.index-menu a {
-    text-decoration: none;
-    color: #240054;
-}
-.index-menu li {
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    transition: background-color 0.3s;
-}
-.roxo{
-    color: #240054;
-}
+  }
+  
+  .btn-custom:hover {
+    background-color: #F49F51;
+  }
+  p{
+    font-size: 1.1em; line-height: 1.6;
+  }

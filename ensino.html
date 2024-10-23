@@ -1,16 +1,582 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="shortcut icon" href="./assets/img/iconP.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/teste20.css">
+    <link rel="stylesheet" href="./css/ensino.css">
 </head>
+
 <body>
-    
+    <nav class="navbar navbar-expand-lg  fixed-top content">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/img/logodaodkasoijda.svg" class="img-fluid " width="88px" height="44px" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse  justify-content-center" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-ensino" href="ensino.html" id="tutorial">Tutorial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-custom"
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSdLg9Z6S-1NnM123Z6kB9xBAQQzIpQX6z3Iwqb5WZFnASAtMg/viewform"
+                            id="btn-inscrever">Inscrever-se</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <article>
+            <div class="container mt-5 pt-5">
+                <div class="row align-items-center gx-3 gy-5 py-2 mt-5">
+                    <div class="col-12 col-md-12 text-justify text-lg-start col-lg-7">
+                        <h2 class="fw-bold titulo fs-1 m sobre pb-3 ">Aprender Nunca Foi Tão Fácil: Vamos Começar?</h2>
+                        <p class="about-text text-justify">
+                            Bem-vindo à área de tutoriais! Aqui você encontrará todos os passos necessários para
+                            desenvolver sua aplicação de forma clara e organizada.
+                        </p>
+                        <p class="about-text">
+                            Nossa missão é guiá-lo através de cada etapa, oferecendo dicas, exemplos e recursos úteis
+                            para facilitar seu aprendizado. Os monitores estarão à disposição para esclarecer qualquer
+                            dúvida que você possa ter. Sinta-se à vontade para explorar os conteúdos e colocar a mão na
+                            massa. Vamos juntos transformar suas ideias em realidade!
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-5">
+                        <img src="./assets/ensinoImg/image.png" class="img-fluid mx-auto d-block" alt="imagem" />
+                    </div>
+                </div>
+            </div>
+        </article>
+        <section class="container py-5">
+            <h2 class="fw-bold mb-4">Fundamentos sobre o Projeto</h2>
+            <p>Neste projeto, você criará um blog que terá funcionalidades como:</p>
+            <div class="mb-4">
+                <div class="d-flex flex-column">
+                    <div class=" alert alert-1   flex-fill mb-3" role="alert">
+                        <strong>Cadastro de posts</strong>: Permite que os usuários criem novos artigos para
+                        compartilhar.
+                    </div>
+                    <div class=" alert alert-2  flex-fill mb-3" role="alert">
+                        <strong>Listagem de posts</strong>: Mostra todos os posts criados, permitindo que os usuários
+                        naveguem facilmente pelo conteúdo.
+                    </div>
+                    <div class=" alert alert-1   flex-fill mb-3" role="alert">
+                        <strong>Cadastro de comentários</strong>: Usuários podem interagir com os posts, deixando suas
+                        opiniões e feedback.
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="fw-bold mb-4">Entendendo Front-end e Back-end</h3>
+            <p>No desenvolvimento de software, os programadores são geralmente divididos em duas categorias:
+                <strong>Front-end</strong> e <strong>Back-end</strong>.
+            </p>
+
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <div class="d-flex flex-column">
+                        <div class="alert alert-2 flex-fill mb-3" role="alert">
+                            <strong>Front-end</strong>: É responsável pelo design e estilização da aplicação, ou seja,
+                            por tudo o que o usuário final vê e interage.
+                        </div>
+                        <img src="./assets/ensinoImg/frontendSmallBanner.jpg"
+                            class="img-fluid" alt="Front-end" style="height: 346px; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex flex-column">
+                        <div class="alert alert-1 flex-fill mb-3" role="alert">
+                            <strong>Back-end</strong>: É responsável pela lógica e pela comunicação com o banco de
+                            dados. Ele lida com a construção de funcionalidades o front-end exibe.
+                        </div>
+                        <img src="./assets/ensinoImg/5f9c9b14740569d1a4ca2991.jpg" class="img-fluid" alt="Back-end"
+                            style="height: 346px; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+
+            <p>A colaboração entre Front-end e Back-end é essencial para o sucesso do projeto, pois juntos criam uma
+                experiência de usuário coesa e funcional.</p>
+        </section>
+
+        <section class="container py-5">
+            <h2 class="fw-bold mb-4">Primeiros Passos</h2>
+            <p>Após extrair a pasta <strong>"guriasofcode"</strong>, siga os passos abaixo para configurar e iniciar o
+                seu ambiente de desenvolvimento. Não se preocupe, vamos explicar tudo!</p>
+
+            <h3 class="fw-bold mb-3">1. Abrindo a Pasta no Visual Studio Code</h3>
+            <p>Abra a pasta <strong>"guriasofcode"</strong> utilizando o <strong>Visual Studio Code</strong>. Dentro
+                dessa pasta, você verá vários arquivos que são importantes para o funcionamento do nosso blog. Esses
+                arquivos formam a base do projeto.</p>
+
+            <h3 class="fw-bold mb-3">2. Acessando o Terminal Integrado</h3>
+            <p>Agora, precisamos abrir o terminal integrado no Visual Studio Code, que é onde você pode digitar
+                comandos.</p>
+            <p>Para abrir o terminal:</p>
+            <ul>
+                <li>Pressione <strong>Ctrl + `</strong> (a tecla ao lado do número 1 no teclado) ou Vá até o menu e
+                    clique em <strong>Exibir > Terminal</strong>.</li>
+            </ul>
+            <p>Veja como fazer isso:</p>
+            <div class="text-center my-3">
+                <img src="https://www.alura.com.br/artigos/assets/como-utilizar-terminal-integrado-visual-studio-code/imagem1.gif"
+                    class="img-fluid" alt="Abrindo o Terminal no VS Code">
+            </div>
+
+            <h3 class="fw-bold mb-3">3. Inicializando os Serviços</h3>
+            <p>Agora vamos preparar o ambiente para o seu blog! O próximo comando que você deve digitar no terminal é:
+            </p>
+            <div
+                style="background-color: #1e1e1e; color: #dcdcdc; padding: 10px; border-radius: 5px;font-family: 'Courier New', Courier, monospace;">
+                <code>docker-compose up --build</code>
+            </div>
+            <p>Este comando faz o seguinte:</p>
+            <ul>
+                <li><strong>docker-compose</strong>: é uma ferramenta que ajuda a gerenciar múltiplos serviços que o seu
+                    blog precisa.</li>
+                <li><strong>up</strong>: inicializa os serviços.</li>
+                <li><strong>--build</strong>: recria os serviços se houver mudanças, garantindo que tudo esteja
+                    atualizado.</li>
+            </ul>
+
+            <p>Depois de digitar o comando, pressione <strong>Enter</strong> no teclado. O terminal começará a carregar
+                e você verá várias mensagens. Isso significa que o ambiente está sendo configurado corretamente! Após a
+                execução desse comando, o ambiente estará pronto para uso</p>
+
+            <h3 class="fw-bold mb-3">4. Abrindo no Navegador</h3>
+
+            <p>Agora que os serviços estão em funcionamento, é hora de visualizar o seu projeto em ação! Abra o seu
+                navegador de preferência e insira a seguinte URL na barra de endereços:
+                <strong>"http://127.0.0.1:8000/"</strong>. Após pressionar Enter, você será direcionado para uma página
+                simples que exibe o título **"Olá"**. Este será o seu ponto de partida para o desenvolvimento da
+                estrutura do seu blog.
+            </p>
+
+            <p>A partir deste momento, você poderá começar a personalizar o layout, adicionar conteúdo e implementar
+                todas as funcionalidades que deseja para o seu projeto. Explore as opções de design e comece a construir
+                um blog que reflita sua visão e estilo!</p>
+
+            <p>Para ajudá-lo a visualizar esse processo, assista ao vídeo abaixo, onde mostramos como digitar a URL na
+                barra de pesquisa do navegador:</p>
+
+            <div class="ratio ratio-16x9">
+                <video controls>
+                    <source src="./assets/ensinoImg/videoURL.mp4" type="video/mp4">
+                    Seu navegador não suporta o formato de vídeo.
+                </video>
+            </div>
+        </section>
+
+        <section class="container py-5">
+            <h3 class="fw-bold mb-3">Finalmente podemos contruir sua primeira pagina!!</h3>
+            <p>Com o projeto aberto em seu editor de texto, navegue até o arquivo <strong>index.html</strong>. A imagem
+                abaixo ilustra a localização desse arquivo dentro da estrutura do projeto:</p>
+            <div class="text-center my-3">
+                <img src="./assets/ensinoImg/arquivo_index.png" class="img-fluid" alt="Abrindo o Terminal no VS Code">
+            </div>
+            <p>Esse arquivo será fundamental para definir a estrutura inicial da sua aplicação web.
+                Dentro do arquivo index.html, você encontrará marcações que guiarão a construção do seu blog. Preste
+                atenção à seguinte linha de código:</p>
+
+            <div
+                style="background-color: #1e1e1e; color: #dcdcdc; padding: 10px; border-radius: 5px; overflow-x: auto; font-family: 'Courier New', Courier, monospace;">
+                <code><!-- abra o arquivo para realizar alterações no topo da página-->
+                    {% include 'topo.html' %}
+                    </code>
+            </div>
+            <p class="p-2">O comando 'include' indica que o arquivo 'topo.html' está sendo inserido dentro do
+                'index.html' Isso significa que, para realizar alterações na parte superior do seu blog, você deve
+                editar o arquivo <strong>'topo.html'</strong> Todas as modificações feitas nesse arquivo refletirão
+                automaticamente no topo de todas as páginas que incluem esse cabeçalho.</p>
+
+            <h3 class="fw-bold mb-3">Vamos criar um topo para pagina</h3>
+            <p>O topo de uma página é normalmente utilizado para criar uma navegação que ajuda os usuários a se
+                orientarem dentro do site.</p>
+            <p>Para implementar essa navegação, adicione o seguinte código dentro do arquivo <strong>topo.html</strong>:
+            </p>
+            <div
+                style="background-color: #1e1e1e; color: #dcdcdc; padding: 10px; border-radius: 5px; overflow-x: auto; font-family: 'Courier New', Courier, monospace;">
+                <pre><code >&lt;!-- abra o arquivo para realizar alterações no topo da página --&gt;
+            &lt;nav class="navbar navbar-expand-lg fixed shadow-sm "&gt;
+                &lt;div class="container-fluid"&gt;
+                    &lt;a class="navbar-brand fw-bold" href="#"&gt;
+                        Nome do &lt;span class=""&gt;blog&lt;/span&gt;
+                    &lt;/a&gt;
+                    &lt;button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"&gt;
+                        &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+                    &lt;/button&gt;
+                    &lt;div class="collapse navbar-collapse" id="navbarNav"&gt;
+                        &lt;ul class="navbar-nav ms-auto"&gt;
+                            &lt;li class="nav-item"&gt;
+                                &lt;a class="nav-link" aria-current="page" href="#"&gt;Início&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class="nav-item"&gt;
+                                &lt;a class="nav-link" href="{% url 'MeuBlog:formularioPost' %}"&gt;Cadastro&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class="nav-item"&gt;
+                                &lt;a class="nav-link" href="https://unipampa.edu.br/alegrete/"&gt;Unipampa&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class="nav-item"&gt;
+                                &lt;a class="nav-link" href="#"&gt;Sobre&lt;/a&gt;
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/nav&gt;
+            </code></pre>
+            </div>
+
+            <p class="pt-2">Após adicionar as novas linhas de código, chegou o momento de ver a mágica acontecer! 🌟
+                Retorne ao seu navegador, atualize a página e prepare-se para observar as mudanças que você implementou
+                ganhando vida. Com a nova navegação, seus usuários poderão se mover facilmente entre diferentes seções
+                do blog, aproveitando uma experiência fluida e intuitiva. Certifique-se de testar cada link e
+                funcionalidade para garantir que tudo esteja em perfeito funcionamento. Divirta-se explorando o fruto do
+                seu trabalho! 🚀</p>
+            <p>Com apenas algumas linhas de código, você conseguiu criar um elemento funcional na página! Isso é
+                possível graças ao poder do <strong>Bootstrap 5</strong>, que oferece uma ampla gama de componentes
+                prontos e responsivos por meio de classes pré-configuradas. As classes do Bootstrap funcionam como
+                “etiquetas” que adicionam estilos e funcionalidades específicas aos elementos HTML. Por exemplo, a
+                classe `nav` permite criar barras de navegação modernas e adaptáveis a diferentes tamanhos de tela,
+                facilitando a construção de menus de forma rápida e eficiente. Explore as possibilidades e veja como o
+                Bootstrap pode transformar seu projeto em algo incrível com pouco esforço! 🎨✨</p>
+        </section>
+        <section class="container py-5">
+            <h3 class="fw-bold mb-3">
+                Vamos Adicionar a Bio do Seu Grupo no Blog Agora!!
+            </h3>
+
+            <p>Agora, vamos voltar ao arquivo index.html para criar uma bio para o seu blog, junto com uma mensagem de
+                boas-vindas. Nesta seção, também aprenderemos como as imagens funcionam dentro do Django.
+            <p>Abaixo está o código que você deve adicionar:</p>
+
+            <div
+                style="background-color: #1e1e1e; color: #dcdcdc; padding: 15px; border-radius: 5px; overflow-x: auto; font-family: 'Courier New', Courier, monospace;">
+                <pre><code>&lt;!-- Bio do grupo --&gt;
+                  &lt;section class="inicio py-4"&gt;
+                    &lt;div class="container-lg"&gt;
+                      &lt;div class="row min-vh-1000 mt-4 align-items-center align-content-center"&gt;
+                        &lt;div class="col-md-6 mt-5 mt-md-0"&gt;
+                          &lt;div class="inicio-imagem text-center"&gt;
+                            &lt;img src="{% static 'imagens/gurias of code.png' %}" class="rounded-circle mw-100" alt=""&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="col-md-6 mt-5 mt-md-0 order-md-first"&gt;
+                          &lt;div class="inicio-texto"&gt;
+                            &lt;p class="text-muted display-5 mb-1"&gt;Olá, Visitante!&lt;/p&gt;
+                            &lt;h1 class="display-3 text-uppercase fs-1 fw-bold"&gt;Seja Bem-vindo!&lt;/h1&gt;
+                            &lt;h2 class="fs-4"&gt;Nome do Seu Blog&lt;/h2&gt;
+                            &lt;div class="mt-5"&gt;
+                              &lt;h4 class="text-muted fs-5"&gt;Sobre o nosso grupo:&lt;/h4&gt;
+                              &lt;p class="fs-6"&gt;@maria_dev 💻 | Apaixonada por tecnologia&lt;/p&gt;
+                              &lt;p class="fs-6"&gt;@raissa_design 🎨 | Criativa e dedicada&lt;/p&gt;
+                              &lt;p class="fs-6"&gt;@ana_codes 👩‍💻 | Adoro solucionar problemas&lt;/p&gt;
+                              &lt;p class="fs-6"&gt;@juliana_frontend 🌐 | Viciada em interfaces perfeitas&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/section&gt;
+                  </code></pre>
+            </div>
+        </section>
+        <section class="container py-5">
+            <h3 class="fw-bold mb-3">Uso da Tag <code>{% static %}</code> no Django</h3>
+
+            <p>
+                No Django, a tag <code>{% static %}</code> é uma ferramenta essencial para lidar com arquivos estáticos
+                como imagens,
+                folhas de estilo (CSS) e scripts JavaScript. Esses arquivos são servidos diretamente ao navegador e são
+                importantes
+                para a aparência e interatividade do seu site.
+            </p>
+
+            <h3 class="fw-bold mb-3">Arquivos Estáticos</h3>
+            <p>
+                Arquivos estáticos são recursos que não mudam durante a execução do projeto. Isso inclui imagens, CSS e
+                JavaScript que
+                ajudam a definir o layout e a funcionalidade do site.
+            </p>
+
+            <h3 class="fw-bold mb-3">Funcionamento da Tag <code>{% static %}</code></h3>
+            <p>
+                Ao utilizar a tag <code>{% static 'caminho/para/arquivo' %}</code>, o Django gera o caminho correto para
+                o arquivo
+                estático. Essa abordagem garante que, independente do ambiente (local ou produção), o Django sempre
+                localize os arquivos
+                corretamente, evitando problemas com URLs relativas.
+            </p>
+
+            <h3 class="fw-bold mb-3">Exemplo Prático</h3>
+            <pre style="background-color: #1e1e1e; color: #dcdcdc; padding: 15px; border-radius: 5px;">
+              <code>&lt;img src="{% static 'imagens/imagem.png' %}" alt="Descrição da imagem"&gt;</code>
+                </pre>
+            <p>
+                Neste exemplo, estamos usando uma imagem chamada <strong>imagem.png</strong> localizada na pasta
+                <code>imagens</code> do diretório de arquivos estáticos.
+                A imagem padrão pode ser a logo do projeto <strong>Gurias of Code</strong>, mas você é livre para
+                substituí-la por qualquer outra imagem.
+            </p>
+
+            <h3 class="fw-bold mb-3">Gerenciamento de Arquivos Estáticos</h3>
+            <p>
+                Para adicionar ou alterar imagens, basta incluir os arquivos na pasta de estáticos definida no seu
+                projeto Django. A tag
+                <code>{% static %}</code> garante que o caminho correto seja sempre usado, mesmo se o projeto for movido
+                para outro servidor ou ambiente.
+            </p>
+        </section>
+
+        <section class="container py-2">
+            <h3 class="fw-bold mb-3">Onde as imagens estão no nosso projeto ?</h3>
+            <p>As imagens devem ser armazenadas na pasta correta para que possam ser facilmente acessadas e exibidas em
+                seu site. Normalmente, você encontrará ou criará uma pasta chamada imagens dentro do diretório de
+                arquivos estáticos do seu projeto.</p>
+            <div class="text-center my-3">
+                <img src="./assets/ensinoImg/arquivo_estatico.png" class="img-fluid"
+                    alt="Abrindo o Terminal no VS Code">
+            </div>
+        </section>
+
+        <section class="container py-2">
+            <h3 class="fw-bold mb-3">Agora iremos criar o layout principal da pagina de posts</h3>
+
+            <p>No arquivo <code>index.html</code>, vamos adicionar o layout principal da página, onde serão exibidos os
+                nossos posts. Este layout é fundamental para apresentar suas publicações de forma organizada e atraente.
+            </p>
+
+
+            <h3 class="fw-bold mb-3">estrutura do Codigo</h3>
+
+            <p>
+                Vamos começar com a seção de noticias
+            </p>
+
+            <div
+                style="background-color: #1e1e1e; color: #dcdcdc; padding: 15px; border-radius: 5px; overflow-x: auto; font-family: 'Courier New', Courier, monospace;">
+                <pre><code>&lt;!-- Seção de notícias --&gt;
+      &lt;section class="py-3 py-md-5"&gt;
+        &lt;div class="container"&gt;
+          &lt;div class="row justify-content-md-center"&gt;
+            &lt;div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6"&gt;
+              &lt;h3 class="fs-6 text-secondary mb-2 text-uppercase text-center"&gt;Últimas Publicações&lt;/h3&gt;
+              &lt;hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle"&gt;
+    </code></pre>
+            </div>
+            <div
+                style="background-color: #1e1e1e; color: #dcdcdc; padding: 15px; border-radius: 5px; overflow-x: auto; font-family: 'Courier New', Courier, monospace;">
+                <pre><code>&lt;!-- Layout para listar posts --&gt;
+
+    &lt;div class="container mt-5"&gt;
+        &lt;div class="row row-cols-1 row-cols-md-3 g-4"&gt;
+            {% for post in posts %}
+            &lt;div class="col"&gt;
+                &lt;div class="card shadow-sm h-100"&gt;
+                    &lt;!-- Imagem do Card --&gt;
+                    &lt;img src="{{post.imagem.url}}" class="card-img-top" alt="Imagem 1"&gt;
+                    &lt;div class="card-body"&gt;
+                        &lt;div class="mb-3"&gt;
+                            &lt;!-- Título da Notícia --&gt;
+                            &lt;h2 class="card-title mb-0 h4"&gt;
+                                &lt;a class="texto-preto fw-bold text-decoration-none"&gt;{{post.titulo}}&lt;/a&gt;
+                            &lt;/h2&gt;
+                        &lt;/div&gt;
+                        &lt;!-- Resumo da Notícia --&gt;
+                        &lt;p class="card-text"&gt;{{post.corpo|slice:":60"}}..&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;!-- Footer do Card --&gt;
+                    &lt;div class="card-footer border-top p-4 d-flex justify-content-between align-items-center"&gt;
+                        &lt;!-- Data da Publicação --&gt;
+                        &lt;span class="ms-2 fs-7"&gt;
+                            &lt;i class="bi bi-calendar3"&gt;&lt;/i&gt; {{ post.data_criacao|date:"d/m/Y" }}
+                        &lt;/span&gt;
+                        &lt;!-- Botão para Acessar a Notícia --&gt;
+                        &lt;a href="{% url 'MeuBlog:detalhar_post' post.id %}" class="btn botao-link roxo"&gt;
+                            Ler mais &lt;i class="bi bi-box-arrow-in-up-right"&gt;&lt;/i&gt;
+                        &lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            {% endfor %}
+        &lt;/div&gt;
+    &lt;/div&gt;
+    </code></pre>
+            </div>
+        </section>
+
+        <section class="container py-2">
+            <h3 class="fw-bold mb-3">
+                Explicando a utilzação do laço for
+            </h3>
+
+            <p>Quando utilizamos o comando <code>{% for post in posts %}</code>, estamos entrando em um
+                <strong>"mundo"</strong> onde podemos explorar todos os posts que foram cadastrados.
+                Imagine que cada post é um livro em uma biblioteca, e nosso objetivo é abrir cada um deles para ler suas
+                histórias.
+            </p>
+
+            <p>O loop for nos permite passar por cada "livro" (ou post) dentro de uma coleção chamada posts.
+                Em termos simples, estamos dizendo: "Para cada post que eu tenho, faça algo com ele."
+                Acessando Informações:</p>
+
+
+            <p>
+                Dentro desse loop, temos acesso a todas as informações de cada post, como o título, o corpo do texto, a
+                data de criação, etc.</p>
+            <p>Assim, podemos exibir esses dados na página de forma organizada e amigável.
+                Por exemplo, se quisermos mostrar o título de cada post, podemos fazer isso facilmente, como se
+                estivéssemos lendo os títulos de todos os livros em uma prateleira.
+            </p>
+
+            <h3 class="fw-bold mb-3">
+                Explicando as Variaveis
+            </h3>
+            <p>No código acima, estamos utilizando uma variável chamada post. Mas o que é uma variável? Pense nela como
+                uma caixa onde podemos guardar informações. Por exemplo, em um projeto de blog, podemos ter várias
+                caixas (variáveis) para armazenar informações sobre cada post, como o título, o corpo do texto, a imagem
+                e a data de criação.</p>
+            <p>Exemplo:
+                <strong>'post.titulo':</strong> É como se tivéssemos uma caixa chamada <strong>"título"</strong> dentro
+                da nossa caixa post, que contém o nome do post.
+                <strong>'post.corpo':</strong> Aqui temos outra caixa que guarda o conteúdo do post.
+                <strong>'post.imagem.url':</strong> Nesta caixa, encontramos o caminho da imagem que será exibida no
+                card.
+            </p>
+            <p>
+                Usando as variáveis, conseguimos acessar facilmente as informações armazenadas e exibi-las de maneira
+                organizada em nosso blog.
+                Essa abordagem nos permite manipular e exibir dados dinamicamente, proporcionando uma experiência de
+                usuário mais rica e interativa.</p>
+
+            <p>Com essa estrutura, você poderá listar seus posts de forma dinâmica e atrativa, garantindo que os
+                visitantes do seu blog tenham uma ótima experiência ao navegar pelo conteúdo.</p>
+        </section>
+
+        <section class="container py-2">
+            <h3 class="fw-bold mb-3">
+                Modificando o Rodapé do Blog
+            </h3>
+            <p>Como você pode notar, ainda temos um arquivo que não foi modificado: o <code>rodape.html</code>. Esse
+                arquivo é incluído na nossa página principal através da linha:</p>
+            <div
+                style="background-color: #1e1e1e; color: #dcdcdc; padding: 15px; border-radius: 5px; overflow-x: auto; font-family: 'Courier New', Courier, monospace;">
+                <pre><code>&lt;footer class="py-5 mt-4 shadow-sm"&gt;
+        &lt;div class="container"&gt;
+            &lt;p class="text-muted"&gt;© 2024 Gurias of Code. Todos os direitos reservados.&lt;/p&gt;
+            &lt;p class="text-muted"&gt;Desenvolvido com ❤️ pelo (número do grupo).&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/footer&gt;
+    </code></pre>
+            </div>
+        </section>
+
+        <section class="container py-2">
+            <h3 class="fw-bold mb-3">Estilizando o layout da Pagina com CSS</h3>
+
+            <p>Depois de ter construído o layout principal da página, é hora de estilizar usando CSS, uma linguagem
+                projetada para adicionar estilos e efeitos visuais às nossas páginas. O CSS permite que você defina
+                cores, fontes, espaçamentos e muito mais, transformando um layout básico em uma interface atraente e
+                envolvente.
+            </p>
+
+            <p>Dentro do seu projeto, você encontrará um arquivo chamado <code>index.css</code>. Este arquivo é
+                responsável por criar
+                classes que definem diferentes estilos que você pode aplicar aos elementos da sua página. Com isso, você
+                pode personalizar a aparência do seu blog de forma simples e eficiente.
+            </p>
+
+            <h3 class="fw-bold mb-3">Adicionando Estilos á navegação</h3>
+            <p>Agora, vamos aplicar uma classe de estilo à barra de navegação (nav). Volte para o arquivo index.html e
+                localize a seção da navegação. Altere a tag <code> &lt;nav&gt; </code> para incluir a classe navbar,
+                navbar-expand-lg, fixed, shadow-sm e fundo-roxo, como no exemplo abaixo:</p>
+
+            <div
+                style="background-color: #1e1e1e; color: #dcdcdc; padding: 15px; border-radius: 5px; overflow-x: auto; font-family: 'Courier New', Courier, monospace;">
+                <pre><code>&lt;nav class= "navbar navbar-expand-lg fixed shadow-sm fundo-roxo"&gt;</code></pre>
+            </div>
+
+            <h3 class="fw-bold mb-3">Explore sua criatividade</h3>
+
+            <p>
+                Experimente diferentes combinações de cores e estilos, e veja como essas alterações impactam a aparência
+                do seu blog. O CSS oferece flexibilidade para que você crie uma interface que seja não apenas funcional,
+                mas também esteticamente agradável. Divirta-se personalizando seu projeto!
+            </p>
+
+            <h3 class="fw-bold mb-3">Cadastrando um Post</h3>
+
+            <p>Com a página aberta em seu navegador utilize o topo de navegação para acessar o link 'Cadastro'</p>
+            <p>
+                Nesta página você vera um formulário pronto, sua função vai ser cadastrar uma noticia e depois retornar
+                um feedback para o usuario em sua página principal a 'index.html'
+            </p>
+            <p>preencha as informações do formulário com algo que deseja compartilhar conosco, esse post sera exibido em
+                seu blog</p>
+
+            <h3 class="fw-bold mb-3">Criando uma mensagem para usuários</h3>
+
+            <p>no arquivo index iremos criar uma mensagem de sucesso quando um post ser cadastrado</p>
+
+            <p>adicione o codigo</p>
+
+            <div
+    style="background-color: #1e1e1e; color: #dcdcdc; padding: 15px; border-radius: 5px; overflow-x: auto; font-family: 'Courier New', Courier, monospace;">
+    <pre><code>
+        &lt;!-- Mensagem de sucesso com cadastro --&gt;
+        {% if messages %}
+        &lt;div class="alert alert-success alert-dismissible fade show" role="alert"&gt;
+            &lt;strong&gt;
+                {% for message in messages %}
+                {{ message }}
+                {% endfor %}
+            &lt;/strong&gt;
+            &lt;button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"&gt;&lt;/button&gt;
+        &lt;/div&gt;
+        {% endif %}
+    </code></pre>
+</div>
+
+<p class="pt-2">Condição <code>{% if messages %}:</code></p>
+<p>Verifica se existem mensagens armazenadas na sessão do usuário. O Django armazena mensagens temporárias que podem ser exibidas após uma ação, como o cadastro de um post.
+Se a lista de mensagens não estiver vazia, o bloco de código que segue será executado.
+:</p>
+<p>Cria um alerta que será exibido na página. O Bootstrap utiliza essas classes para estilizar o alerta e garantir que ele tenha uma aparência adequada e responsiva.
+alert-dismissible permite que o alerta possa ser fechado pelo usuário.
+<code>{% for message in messages %}:</code></p>
+<p>Inicia um loop que itera sobre todas as mensagens disponíveis. Mesmo que, normalmente, você só tenha uma mensagem (por exemplo, "Post cadastrado com sucesso!"), a estrutura permite que você exiba múltiplas mensagens, se necessário.
+A mensagem é inserida entre as tags , o que a destaca visualmente.
+<code>{{ message }}:</code></p>
+<p>Aqui é onde o conteúdo de cada mensagem é inserido no HTML. Essa variável representa a mensagem que foi armazenada na sessão do usuário.
+<code>{% endfor %}:</code>
+Marca o final do loop, indicando que não há mais mensagens para processar.
+</p>
+
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
