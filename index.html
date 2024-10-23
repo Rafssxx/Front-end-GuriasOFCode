@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header id="header-hone" class="header-gurias">
+    <header id="headerInicio" class="header-gurias">
         <nav class="navbar navbar-expand-lg bg-trasparent fixed-top content">
             <div class="container">
                 <a class="navbar-brand" href="#">
@@ -50,7 +50,7 @@
         <section class="text-white hero-gurias">
             <div class="avatarWrapper" id="avatarWrapper">
                 <button class="btn-close" id="btnClose">&times;</button>
-                <video width="320" height="240" id="video-avatar" controls>
+                <video width="320" height="240" id="video-avatar"  controls class="rounded-video">
                     <source src="./assets/avatar/avatarVideoAudio.mp4" type="video/mp4">
                 </video>
             </div>
@@ -63,36 +63,50 @@
             <div class="container">
                 <h3 class="fw-bold text-center titulo fs-1 pb-3 text-white">Nossos Objetivos</h3>
                 <div class="row d-flex align-items-stretch gx-3 gy-5">
-                    <div class="col-12 col-lg-4">
-                        <div class="card card-animado p-4 rounded-4 text-center">
-                            <i class="bi bi-mortarboard-fill icons mx-auto" style="font-size: 3rem;"></i>
-                            <h4 class="card-text mt-3 titulo-card fw-bold">Aprendizagem</h4>
-                            <p class="card-text">Promover um ambiente de aprendizado colaborativo e participativo.
-                            </p>
+                    <div class="col-md-4">
+                        <div class="card card-animado p-4 rounded-4">
+                            <div class="card-body text-center">
+                                <div class="icon-circle icons mx-auto mb-3">
+                                    <i class="bi bi-mortarboard-fill icon-large"
+                                        style="font-size: 3rem; color: #3b2947;"></i>
+                                </div>
+                                <h5 class="mb-0 fw-bold">Aprendizagem</h5>
+                                <p class="m-1">Promover e incentivar de forma acolhedora um ambiente de aprendizado colaborativo e participativo</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4">
-                        <div class="card card-animado p-4 rounded-4 text-center">
-                            <i class="bi bi-heart-pulse-fill icons" style="font-size: 3rem;"></i>
-                            <h4 class="card-text mt-3 fw-bold titulo-card">Incentivo</h4>
-                            <p class="card-text">Oferecer apoio e motivação contínuos para que cada participante
-                                possa
-                                alcançar suas metas.</p>
+                    <div class="col-md-4">
+                        <div class="card card-animado p-4 rounded-4">
+                            <div class="card-body text-center">
+                                <div class="icon-circle icons mx-auto mb-3">
+                                    <i class="bi bi-heart-pulse-fill icon-large"
+                                        style="font-size: 3rem; color: #3b2947;"></i>
+                                </div>
+                                <h5 class="mb-0 fw-bold">Incentivo</h5>
+                                <p class="m-1">Oferecer apoio e motivação contínuos para que cada participante
+                                    possa
+                                    alcançar suas metas.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4">
-                        <div class="card card-animado p-4 rounded-4 text-center">
-                            <i class="bi bi-universal-access icons" style="font-size: 3rem;"></i>
-                            <h4 class="card-text mt-3 fw-bold titulo-card">Inclusão</h4>
-                            <p class="card-text text-center">Criar um espaço acolhedor e acessível, garantindo que
-                                todas se sintam bem-vindas.</p>
+                    <div class="col-md-4">
+                        <div class="card card-animado p-4 rounded-4">
+                            <div class="card-body text-center">
+                                <div class="icon-circle icons mx-auto mb-3">
+                                    <i class="bi bi-heart-pulse-fill icon-large"
+                                        style="font-size: 3rem; color: #3b2947;"></i>
+                                </div>
+                                <h5 class="mb-0 fw-bold">Inclusão</h5>
+                                <p class="m-1">Criar um espaço acolhedor e acessível, garantindo que
+                                    todas se sintam bem-vindas e recebidas.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </article>
         <article>
-            <div class="container mt-5 pt-5">
+            <div class="container mt-5 pt-5" id="aboutMore">
                 <div class="row align-items-center gx-3 gy-5 py-2 mt-5">
                     <div class="col-12 col-md-12 text-justify text-lg-start col-lg-7">
                         <h2 class="fw-bold titulo fs-1 m sobre pb-3 ">Sobre o Gurias of Code</h2>
@@ -113,7 +127,7 @@
 
 
                         <button class="btn  btn-main px-5 py-3 mt-3 fs-6" id="btn-read-more" type="button">
-                            Se inscreva
+                            Inscrever-se
                         </button>
                     </div>
                     <div class="col-12 col-md-12 col-lg-5">
@@ -134,7 +148,7 @@
                                         style="font-size: 3rem; color: #3b2947;"></i>
                                 </div>
                                 <h5 class="mb-0 fw-bold">O evento é realmente gratuito</h5>
-                                <p>Sim! Todos os participantes não precisam pagar nada. O evento é completamente
+                                <p class="m-1">Sim! Todos os participantes não precisam pagar nada. O evento é completamente
                                     gratuito, incluindo lanches e bebidas.</p>
                             </div>
                         </div>
@@ -147,7 +161,7 @@
                                         style="font-size: 3rem; color: #3b2947;"></i>
                                 </div>
                                 <h5 class="mb-0 fw-bold">Quem pode participar</h5>
-                                <p>O evento é voltado para gurias e mulheres a partir de 16 anos que tenham
+                                <p class="m-1">O evento é voltado para gurias e mulheres a partir de 16 anos que tenham
                                     interesse e
                                     curiosidade em computação.</p>
                             </div>
@@ -161,7 +175,7 @@
                                         style="font-size: 3rem; color: #3b2947;"></i>
                                 </div>
                                 <h5 class="mb-0 fw-bold">Como faço para me inscrever</h5>
-                                <p>Para se inscrever, preencha o formulário disponibilizado nas nossas redes,
+                                <p class="m-1">Para se inscrever, preencha o formulário disponibilizado nas nossas redes,
                                     fique atenta a quantidade de vagas limitadas!</p>
                             </div>
                         </div>
@@ -182,7 +196,7 @@
                         <!-- Slide 1 -->
                         <div class="carousel-item active text-center">
                             <div class="team-member">
-                                <img src="./assets/time/retrato-de-homem-branco-isolado_53876-40306.avif"
+                                <img src=""
                                     alt="Profª. Ildevana Poltronieri">
                                 <h3 class="team-name mt-3">Profª. Ildevana Poltronieri</h3>
                                 <p class="team-role">Coordenadora</p>
@@ -271,7 +285,7 @@
         </section>
     </main>
 
-    <footer class="footer text-white py-5 pt-5" style="background-color:#27202c">
+    <footer class="footer text-white py-5 pt-5" style="background-color:#27202c" id="footerContato">
         <div class="container pt-5 mt-5">
             <div class="row">
                 <!-- Coluna: Patrocinadores -->
@@ -295,9 +309,9 @@
             <!-- Seção de Redes Sociais e Copyright -->
             <div class="d-flex justify-content-between align-items-center mt-4">
                 <div class="social-icons">
-                    <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-4">Guriasofcode</i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-4"></i></a>
                 </div>
-                <p class="mb-0">&copy; 2024 Gurias OF Code. Todos os direitos reservados.</p>
+                <p class="mb-0">&copy; 2024 Gurias OF Code.</p>
             </div>
         </div>
     </footer>

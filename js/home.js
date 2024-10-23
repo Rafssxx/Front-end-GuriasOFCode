@@ -5,9 +5,6 @@ fecharAvatar.addEventListener('click', function(){
 })
 
 
-
-
-
 // Função para alternar a exibição do texto "Ler mais"
 var btnReadMore = document.getElementById('btn-read-more');
 btnReadMore.addEventListener('click', function() {
@@ -47,7 +44,7 @@ linksNav.forEach(function(link) {
                 targetElement = document.getElementById('aboutMore');
                 break;
             case 'Início':
-                targetElement = document.getElementById('headerHome');
+                targetElement = document.getElementById('headerInicio');
                 break;
             default:
                 return; // Não faz nada se o link não corresponder a um alvo
