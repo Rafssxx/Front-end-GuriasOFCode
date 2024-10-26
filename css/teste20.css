@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
     bottom: -8px; /* Posição da barra de baixo */
 }
 .custom-navbar {
-    padding: 10px 0; /* Ajuste do espaçamento superior e inferior */
+       padding: 10px 0; /* Ajuste do espaçamento superior e inferior */
   }
   
   .navbar-brand img {
