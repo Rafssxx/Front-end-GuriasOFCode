@@ -382,40 +382,50 @@
             <div
                 style="background-color: #1e1e1e; color: #dcdcdc; padding: 15px; border-radius: 5px; overflow-x: auto; font-family: 'Courier New', Courier, monospace;">
                 <pre><code>&lt;!-- Layout para listar posts --&gt;
-
-    &lt;div class="container mt-5"&gt;
-        &lt;div class="row row-cols-1 row-cols-md-3 g-4"&gt;
-            {% for post in posts %}
-            &lt;div class="col"&gt;
-                &lt;div class="card shadow-sm h-100"&gt;
-                    &lt;!-- Imagem do Card --&gt;
-                    &lt;img src="{{post.imagem.url}}" class="card-img-top" alt="Imagem 1"&gt;
-                    &lt;div class="card-body"&gt;
-                        &lt;div class="mb-3"&gt;
-                            &lt;!-- Título da Notícia --&gt;
-                            &lt;h2 class="card-title mb-0 h4"&gt;
-                                &lt;a class="texto-preto fw-bold text-decoration-none"&gt;{{post.titulo}}&lt;/a&gt;
-                            &lt;/h2&gt;
+                    &lt;!-- Layout para listar posts --&gt;
+                    &lt;section class="py-3 py-md-5"&gt;
+                        &lt;div class="container"&gt;
+                            &lt;div class="row justify-content-md-center"&gt;
+                                &lt;div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6"&gt;
+                                    &lt;h3 class="fs-6 text-secondary mb-2 text-uppercase text-center"&gt;
+                                        Últimas Publicações
+                                    &lt;/h3&gt;
+                                    &lt;hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle"&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
                         &lt;/div&gt;
-                        &lt;!-- Resumo da Notícia --&gt;
-                        &lt;p class="card-text"&gt;{{post.corpo|slice:":60"}}..&lt;/p&gt;
-                    &lt;/div&gt;
-                    &lt;!-- Footer do Card --&gt;
-                    &lt;div class="card-footer border-top p-4 d-flex justify-content-between align-items-center"&gt;
-                        &lt;!-- Data da Publicação --&gt;
-                        &lt;span class="ms-2 fs-7"&gt;
-                            &lt;i class="bi bi-calendar3"&gt;&lt;/i&gt; {{ post.data_criacao|date:"d/m/Y" }}
-                        &lt;/span&gt;
-                        &lt;!-- Botão para Acessar a Notícia --&gt;
-                        &lt;a href="{% url 'MeuBlog:detalhar_post' post.id %}" class="btn botao-link roxo"&gt;
-                            Ler mais &lt;i class="bi bi-box-arrow-in-up-right"&gt;&lt;/i&gt;
-                        &lt;/a&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-            {% endfor %}
-        &lt;/div&gt;
-    &lt;/div&gt;
+                    
+                        &lt;div class="container mt-5"&gt;
+                            &lt;div class="row row-cols-1 row-cols-md-3 g-4"&gt;
+                                {% for post in posts %}
+                                &lt;div class="col"&gt;
+                                    &lt;div class="card shadow-sm h-100"&gt;
+                                        &lt;img src="{{post.imagem.url}}" class="card-img-top" alt="Imagem 1"&gt;
+                                        &lt;div class="card-body"&gt;
+                                            &lt;h2 class="card-title mb-0 h4"&gt;
+                                                &lt;a class="texto-preto fw-bold text-decoration-none"&gt;
+                                                    {{post.titulo}}
+                                                &lt;/a&gt;
+                                            &lt;/h2&gt;
+                                            &lt;p class="card-text"&gt;{{post.corpo|slice:":60"}}..&lt;/p&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="card-footer border-top p-4 d-flex justify-content-between align-items-center"&gt;
+                                            &lt;span class="ms-2 fs-7"&gt;
+                                                &lt;i class="bi bi-calendar3"&gt;&lt;/i&gt;
+                                                {{ post.data_criacao|date:"d/m/Y" }}
+                                            &lt;/span&gt;
+                                            &lt;a href="{% url 'MeuBlog:detalhar_post' post.id %}" 
+                                               class="btn botao-link roxo"&gt;
+                                               Ler mais &lt;i class="bi bi-box-arrow-in-up-right"&gt;&lt;/i&gt;
+                                            &lt;/a&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                {% endfor %}
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/section&gt;
+                    
     </code></pre>
             </div>
         </section>
